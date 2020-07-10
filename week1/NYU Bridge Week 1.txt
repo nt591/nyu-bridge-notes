@@ -5,7 +5,7 @@ Proposition	A logical statement with a truth value
 Compound Proposition	A proposition made up of one or more propositions joined by operations
 Precedence List	<ul><li>¬ (not)</li><li>^ (and)</li><li>v (or)</li><li>--&gt; (conditional)</li><li>&lt;--&gt; (biconditional)</li></ul>
 -&gt; operator	The conditional operator (if p then q)
-Truth Table for Conditional (p -&gt; q)	if P = T and Q = F, conditional is False<div>If P = T and Q = T, conditional is True</div><div>If Q is false, conditional is False</div>
+Truth Table for Conditional (p -&gt; q)	if P = T and Q = F, conditional is False<div>If P = T and Q = T, conditional is True</div><div>If P = F, no matter what Q is conditional is True</div>
 What are the parts of a conditional?	Hypothesis and Conclusion
 What is converse of p-&gt;q?	q-&gt;p
 What is contrapositive of p-&gt;q	¬q —&gt; ¬p
