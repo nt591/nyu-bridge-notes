@@ -1,0 +1,41 @@
+^ operator	Conjunction (the boolean and operation)
+v operator	Disjunction (the boolean or operator)
+¬ operator	Negation (the boolean negation operation)
+Proposition	A logical statement with a truth value
+Compound Proposition	A proposition made up of one or more propositions joined by operations
+Precedence List	<ul><li>¬ (not)</li><li>^ (and)</li><li>v (or)</li><li>--&gt; (conditional)</li><li>&lt;--&gt; (biconditional)</li></ul>
+-&gt; operator	The conditional operator (if p then q)
+Truth Table for Conditional (p -&gt; q)	if P = T and Q = F, conditional is False<div>If P = T and Q = T, conditional is True</div><div>If Q is false, conditional is False</div>
+What are the parts of a conditional?	Hypothesis and Conclusion
+What is converse of p-&gt;q?	q-&gt;p
+What is contrapositive of p-&gt;q	¬q —&gt; ¬p
+What is inverse of p -&gt; q?	¬p —&gt; ¬q
+What is the bidirectional operation?	"&nbsp;p &lt;—&gt; q<div><br></div><div>This means ""p if and only if q""</div><div><br></div><div>equivalent to programming language equality p == q</div><div><br></div><div>Truth Table</div><div><br></div><div>p: T, q: T, answer is T</div><div>p: T, q: F, answer is F<br></div><div>p: F, q: T, answer is F<br></div><div>p: F, q: F, answer is T<br></div>"
+What is a tautology?	"A proposition that is always True, for example&nbsp;<div><br></div><div><span style=""font-weight: 700;"">p ∨ ¬p</span><br></div>"
+What is a contradiction?	"A proposition that is always false, for example<div><br></div><div><span style=""font-weight: 700;"">p ^ ¬p</span><br></div>"
+What is logical equivalence?	Two compound propositions that have the same truth value for all individual proposition values<div><br></div><div>for example</div><div><br></div><div>p is logically equivalent to ¬¬p for all values of P</div>
+De Morgan's Laws for logical equivalence	¬(p v q) is the same as (¬p ^ ¬q)<div><br><div>¬(p ^ q) is the same as (¬p v ¬q)<br></div></div>
+Idempotent laws	p ∨ p ≡ p<div><br></div><div>p ∧ p ≡ p<br></div>
+Associative Laws	<table><tbody><tr><td>( p ∨ q ) ∨ r ≡ p ∨ ( q ∨ r )<br><br>( p ∧ q ) ∧ r ≡ p ∧ ( q ∧ r )<br><br><br></td></tr></tbody></table>
+Commutative Laws	p ∨ q ≡ q ∨ p<div><br></div><div>p ∧ q ≡ q ∧ p<br></div>
+Distributive Laws	p ∨ ( q ∧ r ) ≡ ( p ∨ q ) ∧ ( p ∨ r )<div><br></div><div>p ∧ ( q ∨ r ) ≡ ( p ∧ q ) ∨ ( p ∧ r )<br></div>
+Identity Laws	<table><tbody><tr><td>p ∨ F ≡ p<br><br></td></tr></tbody></table><br><div>p ∧ T ≡ p<br></div>
+Domination Laws	p ∧ F ≡ F<div><br></div><div>p ∨ T ≡ T<br></div>
+Double Negation Law	¬¬p ≡ p
+Complement Laws	p ∧ ¬p ≡ F&nbsp;<div>¬T ≡ F</div><div><br></div><div><br></div><div>p ∨ ¬p ≡ T</div><div>&nbsp;¬F ≡ T<br></div>
+Absorption Laws	p ∨ (p ∧ q) ≡ p<div><br></div><div>p ∧ (p ∨ q) ≡ p<br></div>
+Conditional Identities	p → q ≡ ¬p ∨ q<div><br></div><div>p ↔ q ≡ ( p → q ) ∧ ( q → p )<br></div>
+What is a predicate	A logical statement where the truth value is a function of one or more variables
+What is the domain	The set of all possible values for a variable
+What is a quantifier	A way to express all the values of a domain
+Universal Quantifier	∀x P(x)<div><br></div><div>For all values of x in the domain, P(x) is true</div>
+Existential Quantifier	∃x P(x)<div><br></div><div>There is a value of x in the domain of variables that makes P(x) true</div>
+What is a counterexample to a quantified statement?	For universal quantifiers, a counterexample is a value that makes P(x) false
+Is ∀x P(x) ∧ Q(x) equal to (∀x P(x)) ^ Q(x)<br>or ∀x(P(x) ∧ Q(x))<br><br>	∀x P(x) ∧ Q(x) is equal to (∀x P(x)) ^ Q(x)<div><br></div><div>Quantifiers have precedence</div>
+What is a free variable	A variable that is not connected to a quantifier<div><br></div><div>That is, P(x)&nbsp;</div><div><br></div><div>X is a free variable</div>
+What is a bound variable	A variable that is in a quantified statement is bound to the quantifier<div><br></div><div>that is</div><div><br></div><div>x in ∀x(P(x) is called a&nbsp;<strong>bound variable</strong>&nbsp;because it’s bound to a quantifier<br></div>
+Are all statements propositions? Why or why not	No<div><br></div><div>if a statement has a free variable, we cannot determine a truth value</div><div><br></div><div>for example, domain of integers</div><div><br></div><div>P(x) is a statement</div><div><br></div><div>∀x P(x) is a proposition<br></div>
+De Morgan's Laws for quantified statements	¬∀x F(x) is the same as&nbsp; ∃x ¬F(x)<div>¬∃x F(x) is the same as&nbsp; ∀x ¬F(x)</div><div><br></div><div>Move negation past quantifier, toggle quantifier type</div>
+What is a nested quantifier	A statement with more than one quantifier binding different variables<div><br></div><div>∀x∃yP(x,y) -&gt;&nbsp;<br></div><table><tbody><tr><td>x and y are both bound<br><br>∃y∃zT(x,y,z) -&gt; y and z are bound, x is free<br></td></tr><tr></tr></tbody></table><br>
+Two player game for nested quantifiers: what are the rules?	Existential player tries to make the statement true, only need one truth value<div><br></div><div>Universal player tries to make statement false, if one value is false then entire universal statement fails</div>
+"Expressing uniqueness for sentence ""Everyone sent an email to everyone else"" where domain is employees, M(x,y) is predicate ""x emailed y"""	∀x ∀y((x =/= y) —&gt; M(x, y))
