@@ -1,0 +1,54 @@
+What does a compiler do?	Takes source code and returns object code	C++
+What does a linker do?	Takes a program's object code, combines with other code needed for some routines and returns bundle	C++
+Algorithm	A series of precise instructions	C++
+Program Design phases	Problem solving - find data structures and algorithms<div>Implementation - write the code</div>	C++
+Object Oriented Programming	Modeling your problem domain as a set of interacting objects. It gives us encapsulation, inheritance and polymorphism	C++
+Software Life Cycle	Problem definition - analyzing the task<br>* Object and algorithm design<br>* Implementation<br>* Testing<br>* Maintenance and evolution<br>* Obsolescence	C++
+Return statement	Identifies that a program ends	C++
+Variable declaration syntax	TYPENAME IDENTIFIER<div>examples</div><div><br></div><div>int number_of_hats;</div><div>bool ate_dinner;</div><div>string first_name;</div>	C++
+Include Directives	A way to tell the compiler to bring code from another file into this file<div><br></div><div>syntax</div><div><br></div><div>#include &lt;LIBRARY&gt;</div>	C++
+Using Directives	A way to tell the compiler to bring another namespace's code into this file&nbsp;<div><br></div><div>syntax</div><div><br></div><div>using namespace MODULE;</div>	C++
+How do you write output?	std::cout (or just cout)	C++
+How do you take input?	std::cin (or just cin)	C++
+Int data type size	4 bytes	C++
+Int number representation internally	Two's complement	C++
+Constant declaration	const TYPE IDENTIFIER = VALUE;<div><br></div><div>example</div><div><br></div><div>const float PI = 3.14f;</div>	C++
+Floats - size and why they exist	4 bytes<div><br></div><div>represent fractions with approximation</div><div><br></div>	C++
+Doubles - size and why they exist	8 bytes<div><br></div><div>represent fractions with some approximation</div>	C++
+Type casting	Converts value from one type to another<div><br></div><div>example</div><div><br></div><div>int asciiCode = (int) 'a';</div><div><br></div><div>char fromAscii = (char) 97;</div>	C++
+5 / 3.0 =?	1<div><br></div><div>1.6667, implicit cast</div>	C++
+5 / 3 =?	1&nbsp;<div><br></div><div>integer division</div>	C++
+Char type	1 byte<div><br></div><div>used for characters, stored as ASCII</div>	C++
+String class	needs directive<div><br></div><div>#include &lt;string&gt;</div><div><br></div><div>double quotes</div>	C++
+Boolean operators	! (not)<div>&amp;&amp; (conjunction)</div><div>|| (disjunction)</div>	C++
+Keywords / reserved words	Words saved by compiler, cannot be used for identifiers<div><br></div>	C++
+Identifier	The name of a variable	C++
+auto keyword	type inference for variable declaration<div><br></div><div>example</div><div><br></div><div>auto dogRating = 10;</div>	C++
+What is an argument	A series of hypotheses, followed by a final proposition called a conclusion<div><br></div><div>Argument is valid if conclusion is true when all hypotheses are true</div><div><br></div><div><div>Argument is invalid if conclusion is false when all hypotheses are true</div></div><div><br></div>	Logic
+∴ symbol	therefore	Logic
+Modus ponens	p<div>(p --&gt; q)&nbsp;</div><div>∴ q</div>	Logic
+Modus tollens	¬q&nbsp;<div>(p --&gt; q)&nbsp;</div><div>∴ ¬p&nbsp;<br></div>	Logic
+Addition	p&nbsp;<div>∴ p v q<br></div>	Logic
+Simplification<br>	p ^ q&nbsp;<div>∴ p&nbsp;<br></div>	Logic
+Conjunction	p<div>q</div><div>∴ p ^ q&nbsp;<br></div>	Logic
+Hypothetical Syllogism	p --&gt; q<div>q --&gt; r&nbsp;</div><div>∴ p --&gt; r<br></div>	Logic
+Disjunctive Syllogism	p v q<div>¬p</div><div>∴ q&nbsp;</div>	Logic
+Resolution	p v q<div>¬p v r&nbsp;</div><div>∴ q v r&nbsp;</div>	Logic
+Logical Proof	Process of applying rules of inference and laws of propositional logic to an argument<div><br></div><div>Consists of series of steps pairing propositions with justificaitons</div>	Logic
+Solve for<br><br>(r v w)&nbsp; --&gt; c<br>¬c<br>_______<br>¬w<br>	| # |&nbsp;&nbsp;&nbsp; Proposition&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; Rule&nbsp;&nbsp; |<br>| 1 | (r ∨ w) → c&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Hypothesis|<br>| 2 | ¬c&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Hypothesis|<br>| 3 | ¬(r ∨ w)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Modus Tollens 1, 2 |<br>| 4 | ¬r ^ ¬w&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | De Morgan's Law 3 |<br>| 5 | ¬w ^ ¬r&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Commutative 4 |<br>| 6 | ¬w&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Simplification 5|	Logic
+Element - what is it, what are the types	"An element is one value from the domain<div><br></div><div>If an element has no distinguishing characteristics we call it ""arbitrary""</div><div><br></div><div>if it has some distinguishable features we call it ""particular""</div>"	Logic
+Particular element	A member of a domain with distinguishing features, eg 5 is odd in domain of integers	Logic
+Arbitrary element	An element in the domain with no distinguishing features, eg 5 is a value in the domain of integers	Logic
+Existential Instantiation	Replacing a qualified variables with an element in domain. Can be particular or arbitrary.	Logic
+Universal Instantiation	Replacing a qualified variables with an element in domain. Must be arbitrary	Logic
+Existential generalization	"Replacing an element of a domain with a quantified variable.&nbsp;<div><br></div><div>""Sam is a particular student in the class. Sam completed the assignment. Therefore there exists a student in the class that completed the assignment.""<br></div>"	Logic
+Universal Generalization	"Replacing an arbitrary element with a quantified variable<div><br></div><div>""Let c be an arbitrary integer. c &lt;= c^2. Therefore all integers are less than or equal to their square""<br></div>"	Logic
+Theorem	A statement that can be proven true	Logic
+Proof	A series of steps that follow logically from assumptions or previously proven statements	Logic
+Axioms	Staetments we take to be true	Logic
+Proof by Exhaustion	Checking all elements in a domain for a proof	Logic
+Counterexample	Finding an element in a large domain to prove a theorem false	Logic
+Direct Proof	Given p --&gt; c, where p is conjunction of hypotheses, prove c as a result of the hypotheses	Logic
+Proof by contrapositive	Given a theorem p--&gt; c, prove ¬c --&gt; ¬p<div><br></div><div>example</div><div><br></div><div>If it rains then I will stay home, I did not stay home therefore it did not rain</div><div><br></div><div>or&nbsp;</div><div><br></div><div>given&nbsp;∀n (D(n^2) → D(n)) prove&nbsp;∀n (¬D(n) → ¬D(n^2))</div><div><br></div>	Logic
+Proof by contradiction	Assume theorem is false and then find some inconsistency (also known as indirect proof)<div><br></div><div>Example. Proof by contradiction that sqrt(2) is irrational<br></div><div><br>1) assume the negation, or sqrt(2) is rational<br>2) Express sqrt(2) as n / d, since it's rational (d != 0 and no integer &gt; 1 can divide into n and d)<br>3) since `sqrt(2) = n / d` we can square both sides of the equation `2 = n^2 / (d&nbsp; ^ 2)` and then multiply both sides by `d^2` to get `2d^2 = n^2`<br>4) Since n^2 can be represented as 2 times some number, we can claim n^2 is even and thus n is even<br>5) If n is even, then `n = 2k` and if `2k = 2(d^2)` then d^2 must be a multiple of 2 and therefore even<br>7)&nbsp; if d^2 is even then d is even<br>8)&nbsp; If n and d are even, there exists an integer n that divides into both n and d, so therefore `n / d` cannot be rational so it must be irrational<br></div>	Logic
+Proof by cases	"Take a universally quantified statement, break down into case, assign values of domain into case, then prove true for each cases<div><br></div><div>example, for the theorem ""for every integer x, x^2 - x is even"" can be proven in two cases: x is odd or x is even.<br></div>"	Logic
