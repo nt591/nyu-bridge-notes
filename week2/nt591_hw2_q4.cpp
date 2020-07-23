@@ -10,9 +10,6 @@ using namespace std;
 
 int main() {
   int x, y;
-  cout.setf(ios::fixed);
-  cout.setf(ios::showpoint);
-  cout.precision(1);
 
   cout << "Please enter two positive intergers, separated by a space: " << endl;
   cin >> x >> y;
